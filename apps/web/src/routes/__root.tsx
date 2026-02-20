@@ -6,6 +6,7 @@ import { TanStackDevtools } from '@tanstack/react-devtools'
 import appCss from '../styles.css?url'
 import { TanstackQueryProvider } from '@/contexts/TanstackQueryProvider'
 import { TooltipProvider } from '@/components/ui/Tooltip'
+import { ThemeProvider } from '@/contexts/ThemeProvider'
 
 export const Route = createRootRoute({
   head: () => ({
@@ -40,7 +41,9 @@ function RootDocument({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         <TanstackQueryProvider>
-          <TooltipProvider>{children}</TooltipProvider>
+          <ThemeProvider>
+            <TooltipProvider>{children}</TooltipProvider>
+          </ThemeProvider>
           <TanStackDevtools
             config={{
               position: 'bottom-right',
