@@ -15,6 +15,13 @@
       "when": 1771888617292,
       "tag": "0001_curved_boomerang",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1771891270281,
+      "tag": "0002_tiny_callisto",
+      "breakpoints": true
     }
   ]
 }
