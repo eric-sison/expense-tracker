@@ -3,8 +3,8 @@ import { drizzleAdapter } from "better-auth/adapters/drizzle";
 import { betterAuth } from "better-auth";
 import { jwt, openAPI } from "better-auth/plugins";
 import { oauthProvider } from "@better-auth/oauth-provider";
-import { db } from "@/database/db.js";
-import * as authSchema from "@/database/schemas/auth-schema.js";
+import { db } from "database/db.js";
+import * as authSchema from "database/schemas/auth-schema.js";
 
 export const auth = betterAuth({
   baseURL: process.env.BETTER_AUTH_URL,

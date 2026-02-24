@@ -1,4 +1,4 @@
-import { auth } from "@/lib/auth.js";
+import { auth } from "lib/auth.js";
 import { Hono } from "hono";
 
 export const metadataHandler = new Hono()
